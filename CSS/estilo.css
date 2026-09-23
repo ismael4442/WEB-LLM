@@ -1,0 +1,233 @@
+/* GENERAL */
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* CABECERA */
+
+header {
+    background: linear-gradient(135deg, #0066ff, #00bfff);
+    padding: 25px;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 4px 15px rgba(0, 140, 255, 0.5);
+}
+
+header h1 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    margin: 0 0 25px 0;
+}
+
+header nav {
+    display: flex;
+    gap: 12px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.3s;
+}
+
+header a:hover {
+    background-color: white;
+    color: #0066ff;
+    transform: translateY(-2px);
+}
+
+
+/* BOTÓN INICIO */
+
+.inicio-btn {
+    background-color: white;
+    color: #0066ff !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.inicio-btn:hover {
+    background-color: #eaf7ff;
+    color: #004dcc !important;
+    transform: translateY(-3px) scale(1.03);
+}
+
+
+/* HORARIO */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+th {
+    background-color: #fafaf9;
+    height: 28px;
+}
+
+td:hover {
+    filter: brightness(92%);
+}
+
+
+/* COLORES DE LAS ASIGNATURAS */
+
+.fdh { background-color: #ff8585; }
+.ldm { background-color: #8fa8ff; }
+.IPE { background-color: #ffc266; }
+.sost { background-color: #86c486; }
+.ing { background-color: #8fc6cc; }
+.red { background-color: #d98b83; }
+.sist { background-color: #b38ad9; }
+.bases { background-color: #ffe866; }
+.proyecto { background-color: #82c5c9; }
+.dig { background-color: #d9a96f; }
+
+
+/* PÁGINA DE INICIO */
+
+.bienvenida,
+.asignaturas,
+.enlaces,
+.imagen {
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.bienvenida {
+    text-align: center;
+    background-color: #dce8ff;
+}
+
+.bienvenida h1 {
+    font-size: 30px;
+}
+
+.bienvenida p {
+    font-size: 17px;
+}
+
+.asignaturas {
+    background-color: #f0bdbd;
+}
+
+.asignaturas h2,
+.enlaces,
+.imagen {
+    text-align: center;
+}
+
+.asignaturas li {
+    margin: 8px;
+}
+
+.enlaces {
+    background-color: #cfeff1;
+}
+
+.enlaces a {
+    font-weight: bold;
+    color: #4169e1;
+}
+
+.imagen {
+    background-color: #f5eadb;
+}
+
+.imagen img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.formulario h1,
+.formulario p {
+    text-align: center;
+}
+
+.formulario p {
+    margin-bottom: 25px;
+}
+
+.formulario label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.formulario textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border: 2px solid #008cff;
+}
+
+.formulario input[type="submit"] {
+    margin-top: 25px;
+    background: linear-gradient(135deg, #0066ff, #00bfff);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.formulario input[type="submit"]:hover {
+    filter: brightness(90%);
+}
+
+
+/* FOOTER */
+
+footer {
+    color: white;
+    background: linear-gradient(135deg, #00bfff, #0066ff);
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 -4px 15px rgba(0, 140, 255, 0.5);
+}

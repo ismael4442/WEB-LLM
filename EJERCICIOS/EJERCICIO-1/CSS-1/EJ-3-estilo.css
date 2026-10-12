@@ -1,0 +1,53 @@
+/* Primera tabla */
+.tabla1 {
+    border: 2px solid blue;
+    border-spacing: 6px;
+    margin-left: 95px;
+}
+
+.tabla1 caption {
+    font-style: italic;
+}
+
+.tabla1 th {
+    padding: 5px;
+}
+
+.tabla1 td {
+    border: 2px solid blue;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+/* Segunda tabla */
+.tabla2 {
+    border-collapse: collapse;
+    margin-left: 95px;
+    text-align: center;
+}
+
+.tabla2 caption {
+    font-style: italic;
+}
+
+.tabla2 th,
+.tabla2 td {
+    border: 2px solid #e6b800;
+    padding: 15px;
+}
+
+.tabla2 th {
+    background-color: #dddddd;
+}
+
+.tabla2 td {
+    background-color: #dddddd;
+}
+
+/* Celdas verdes */
+.tabla2 tr:nth-child(2) td,
+.tabla2 tr:nth-child(4) td {
+    background-color: yellowgreen;
+}

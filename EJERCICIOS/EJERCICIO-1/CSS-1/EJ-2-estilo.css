@@ -1,0 +1,68 @@
+body{
+    font-family: Arial;
+    margin: 20px;
+    background-image: url("../IMG/flor.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+h4{
+    text-align: center;
+    color: red;
+    font-family: Georgia;
+}
+
+span{
+    color: black;
+}
+
+img{
+    display: block;
+    width: 650px;
+    margin: 20px auto;
+}
+
+a{
+    background: #f5c400;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+}
+
+pre{
+    font-family: monospace;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+p{
+    font-size: 13px;
+}
+
+#capitulo4{
+    background: cornflowerblue;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 500px;
+    color: black;
+}
+
+#capitulo4 a{
+    background: white;
+    color: black;
+    padding: 3px;
+    font-size: 11px;
+}
+
+h4 span{
+    background: yellow;
+    position: relative;
+    top:10px;
+}
+
+.google {
+    position: relative;
+    top:-10px;
+}

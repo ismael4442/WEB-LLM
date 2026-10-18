@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios HTML y CSS</title>
+
+    <!-- CSS común de la web -->
+    <link rel="stylesheet" href="CSS/headerfooter.css">
+
+    <!-- CSS de los tres ejercicios -->
+    <link rel="stylesheet" href="CSS/Ej1_formato_texto.css">
+</head>
+
+<body>
+
+    <!-- CABECERA COMÚN -->
+    <header>
+        <h1>Mi instituto</h1>
+
+        <nav>
+            <a href="index.html" class="inicio-btn">⌂ Inicio</a>
+            <a href="HORARIO.html">Horario</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="Ej1_formato_texto.html">Ej1_formato_texto.html</a>
+            <a href="Ej3_class_id_iframe.html">Ej3_class_id_iframe.html</a>
+        </nav>
+    </header>
+
+
+    <!-- EJERCICIO 1 -->
+    <div id="ejercicio1" class="ejercicio1">
+
+        <div class="cabecera-ej1">
+            <h2>Esto es un encabezado h1</h2>
+            <h3>Esto es un encabezado h2</h3>
+        </div>
+
+        <img src="IMG/fotoej11.png" alt="Imagen">
+
+        <div class="contenido-ej1">
+            <p>
+                Esto es un párrafo con un
+                <span class="tamaño">tamaño de 30px</span>
+                <br>
+                y <u>un salto de linea</u>.
+                El estilo utiliza una <strong>fuente verdana</strong>
+            </p>
+
+            <hr>
+        </div>
+
+        <div class="pie-ej1">
+            <p>
+                Esto es un hipervinculo que va a google:
+                <a href="https://www.google.com">Ir a google</a>
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- EJERCICIO 2 -->
+    <div id="ejercicio2" class="ejercicio2">
+
+        <h4>Esto es un encabezado h4 <span>h2</span></h4>
+
+        <a href="#capitulo4">Ir a capítulo 4</a>
+
+        <pre>
+esto es un texto
+preformateado
+        </pre>
+
+        <p>
+            Este hipervínculo va a
+            <span class="google"><b>google</b></span>
+
+            <a href="https://www.google.com" target="_blank">
+                Ir a google
+            </a>
+        </p>
+
+        <div id="capitulo4">
+
+            <a href="#capitulo4">hipervínculo en la misma página</a>
+
+            <p><b>Esto es el Capítulo 4</b></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- EJERCICIO 3 -->
+    <div id="ejercicio3" class="ejercicio3">
+
+        <table class="tabla1">
+            <caption>Tabla prueba 1</caption>
+
+            <tr>
+                <th>columna 1</th>
+                <th>columna 2</th>
+                <th>columna 3</th>
+                <th>columna 4</th>
+            </tr>
+
+            <tr>
+                <td class="celda">col1</td>
+                <td class="celda" colspan="2">col2</td>
+                <td class="celda" rowspan="2">col3</td>
+            </tr>
+
+            <tr>
+                <td class="celda">colum1</td>
+                <td class="celda">colum2</td>
+                <td class="celda">colum4</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table class="tabla2">
+            <caption>Tabla prueba 2</caption>
+
+            <tr>
+                <th>columna 1</th>
+                <th>columna 2</th>
+                <th>columna 3</th>
+                <th>columna 4</th>
+            </tr>
+
+            <tr>
+                <td class="celda">col1</td>
+                <td class="celda" colspan="2">col2</td>
+                <td class="celda">col3</td>
+            </tr>
+
+            <tr>
+                <td class="celda">colum1</td>
+                <td class="celda" rowspan="2">colum2</td>
+                <td class="celda">colum3</td>
+                <td class="celda">colum4</td>
+            </tr>
+
+            <tr>
+                <td class="celda">colum1</td>
+                <td class="celda">colum3</td>
+                <td class="celda">colum4</td>
+            </tr>
+
+            <tr>
+                <td class="celda">colum1</td>
+                <td class="celda" rowspan="2">colum2</td>
+                <td class="celda">colum3</td>
+                <td class="celda">colum4</td>
+            </tr>
+        </table>
+            <br>
+    </div>
+
+
+    <!-- PIE DE PÁGINA COMÚN -->
+    <footer>
+        <p>CIFP Virgen de Gracia</p>
+
+        <p>
+            Contacto:
+            <a href="mailto:ismaelgardelamo@gmail.com">
+                ismaelgardelamo@gmail.com
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>

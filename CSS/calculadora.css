@@ -1,0 +1,130 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+                 "Segoe UI", sans-serif;
+
+    background: linear-gradient(135deg, #1c1c1e, #3a3a3c, #111113);
+}
+
+/* Calculadora */
+table {
+    width: 320px;
+    padding: 20px;
+
+    border-spacing: 8px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.45),
+        inset 0 1px 1px rgba(255, 255, 255, 0.12);
+}
+
+/* Pantalla */
+#pantalla {
+    width: 100%;
+    height: 90px;
+
+    padding: 15px;
+
+    border: none;
+    outline: none;
+    border-radius: 20px;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    color: white;
+    font-size: 42px;
+    font-weight: 300;
+    text-align: right;
+
+    box-shadow:
+        inset 0 2px 8px rgba(0, 0, 0, 0.2);
+
+    margin-bottom: 8px;
+}
+
+/* Botones */
+button {
+    width: 62px;
+    height: 62px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+
+    font-size: 23px;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition:
+        background 0.15s ease,
+        transform 0.1s ease,
+        box-shadow 0.15s ease;
+
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Efecto al pasar el ratón */
+button:hover {
+    background: rgba(255, 255, 255, 0.22);
+}
+
+/* Efecto al pulsar */
+button:active {
+    transform: scale(0.92);
+    background: rgba(255, 255, 255, 0.30);
+}
+
+/* Botones de operaciones */
+button[onclick*="'/'"],
+button[onclick*="'*'"],
+button[onclick*="'-'"],
+button[onclick*="'+'"],
+button[onclick*="'='"] {
+    background: rgba(255, 159, 10, 0.9);
+    color: white;
+}
+
+button[onclick*="'/'"]:hover,
+button[onclick*="'*'"]:hover,
+button[onclick*="'-'"]:hover,
+button[onclick*="'+'"]:hover,
+button[onclick*="'='"]:hover {
+    background: #ffb340;
+}
+
+/* Botón borrar */
+td[colspan="4"] button {
+    width: 100%;
+    height: 50px;
+
+    border-radius: 18px;
+
+    background: rgba(255, 69, 58, 0.75);
+
+    font-size: 18px;
+}
+
+td[colspan="4"] button:hover {
+    background: rgba(255, 69, 58, 0.95);
+}

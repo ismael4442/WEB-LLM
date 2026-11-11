@@ -1,0 +1,27 @@
+
+/* MODO OSCURO */
+
+body {
+    background-color: rgb(18, 18, 18);
+}
+
+.menu-js {
+    background-color: rgb(18, 18, 18);
+}
+
+.cuadro {
+    background-color: rgb(18, 18, 18);
+}
+
+.cuadro h3,
+.cuadro p {
+    color: white;
+}
+
+.menu-js h2 {
+    color: white;
+}
+
+.menu-js .descripcion {
+    color: #cccccc;
+}

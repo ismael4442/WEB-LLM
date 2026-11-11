@@ -1,0 +1,111 @@
+
+/* CONTENIDO PRINCIPAL */
+
+.menu-js {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f4f8;
+}
+
+.menu-js h2 {
+    color: #0066cc;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.descripcion {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* CUADROS DE PROYECTOS */
+
+.proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.cuadro {
+    background-color: white;
+    width: 300px;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
+    border: 1px solid #e0eaff;
+}
+
+.cuadro:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 102, 255, 0.2);
+}
+
+/* ICONOS */
+
+.icono {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+/* TÍTULOS Y DESCRIPCIONES */
+
+.tarjeta h3 {
+    color: #0066cc;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    min-height: 48px;
+    margin-bottom: 25px;
+}
+
+/* ENLACES DE LAS TARJETAS */
+
+.cuadro a {
+    display: inline-block;
+    background: linear-gradient(135deg, #0066ff, #00bfff);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.cuadro a:hover {
+    background: linear-gradient(135deg, #004dcc, #0099dd);
+    transform: scale(1.05);
+}
+
+/* BOTÓN MODO OSCURO */
+
+.menu-js .boton-oscuro {
+    margin-top: 10px;
+}
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 650px) {
+
+    .menu-js {
+        padding: 30px 15px;
+    }
+
+    .proyectos {
+        gap: 20px;
+    }
+
+    .cuadro {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}

@@ -1,130 +1,153 @@
-  * {
-    box-sizing: border-box;
+
+/* CONFIGURACIÓN GENERAL */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+}
+
+/* CABECERA */
+header {
+    background: linear-gradient(135deg, #0066ff, #00bfff);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: #0066ff;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
-                 "Segoe UI", sans-serif;
-
-    background: linear-gradient(135deg, #1c1c1e, #3a3a3c, #111113);
+    padding: 50px 20px;
+    min-height: 70vh;
 }
 
-/* Calculadora */
+/* CALCULADORA */
+.calculadora {
+    background: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.calculadora h2 {
+    color: #0066cc;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.instrucciones {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* TABLA */
 table {
-    width: 320px;
-    padding: 20px;
-
+    width: 100%;
     border-spacing: 8px;
-
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 30px;
-
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-
-    box-shadow:
-        0 25px 60px rgba(0, 0, 0, 0.45),
-        inset 0 1px 1px rgba(255, 255, 255, 0.12);
+    table-layout: fixed;
 }
 
-/* Pantalla */
+/* PANTALLA */
 #pantalla {
     width: 100%;
-    height: 90px;
-
-    padding: 15px;
-
-    border: none;
-    outline: none;
-    border-radius: 20px;
-
-    background: rgba(0, 0, 0, 0.25);
-
-    color: white;
-    font-size: 42px;
-    font-weight: 300;
+    height: 65px;
+    border: 2px solid #dce9ff;
+    border-radius: 10px;
+    background: #f2f7ff;
     text-align: right;
-
-    box-shadow:
-        inset 0 2px 8px rgba(0, 0, 0, 0.2);
-
-    margin-bottom: 8px;
+    padding: 10px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #0066cc;
+    outline: none;
 }
 
-/* Botones */
+/* BOTONES */
 button {
-    width: 62px;
-    height: 62px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.12);
-    color: white;
-
-    font-size: 23px;
-    font-weight: 400;
-
-    cursor: pointer;
-
-    transition:
-        background 0.15s ease,
-        transform 0.1s ease,
-        box-shadow 0.15s ease;
-
-    box-shadow:
-        inset 0 1px 1px rgba(255, 255, 255, 0.1);
-}
-
-/* Efecto al pasar el ratón */
-button:hover {
-    background: rgba(255, 255, 255, 0.22);
-}
-
-/* Efecto al pulsar */
-button:active {
-    transform: scale(0.92);
-    background: rgba(255, 255, 255, 0.30);
-}
-
-/* Botones de operaciones */
-button[onclick*="'/'"],
-button[onclick*="'*'"],
-button[onclick*="'-'"],
-button[onclick*="'+'"],
-button[onclick*="'='"] {
-    background: rgba(255, 159, 10, 0.9);
-    color: white;
-}
-
-button[onclick*="'/'"]:hover,
-button[onclick*="'*'"]:hover,
-button[onclick*="'-'"]:hover,
-button[onclick*="'+'"]:hover,
-button[onclick*="'='"]:hover {
-    background: #ffb340;
-}
-
-/* Botón borrar */
-td[colspan="4"] button {
     width: 100%;
-    height: 50px;
-
-    border-radius: 18px;
-
-    background: rgba(255, 69, 58, 0.75);
-
-    font-size: 18px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    background: #edf3fc;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-td[colspan="4"] button:hover {
-    background: rgba(255, 69, 58, 0.95);
+button:hover {
+    background: #d6e6ff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 102, 255, 0.15);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* OPERADORES */
+button.operador {
+    background: linear-gradient(135deg, #0066ff, #00aaff);
+    color: white;
+}
+
+button.operador:hover {
+    background: #0052cc;
+}
+
+/* BOTÓN IGUAL */
+button.igual {
+    background: #00b386;
+    color: white;
+}
+
+button.igual:hover {
+    background: #008f6b;
+}
+
+/* BOTÓN BORRAR */
+button.borrar {
+    background: #e74c3c;
+    color: white;
+    height: 48px;
+    font-size: 17px;
+}
+
+button.borrar:hover {
+    background: #c0392b;
 }

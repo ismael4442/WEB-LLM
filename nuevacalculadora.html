@@ -1,47 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
 
-    <link rel="stylesheet" href="css/calculadora.css">
-    <script src="js/calculadora.js"></script>
-</head>
-<body>
-    <table>
-        <thead>
-            <input type="text" id="pantalla" value="0" readonly>
-        </thead>
-        <tbody>
+    <link rel="stylesheet" href="css/calculadora.css" />
+    <script src="js/calculadora.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Mi instituto</h1>
+
+      <nav>
+        <a href="jsinicio.html">Inicio JavaScript</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="calculadora">
+        <h2>Calculadora</h2>
+        <p class="instrucciones">Realiza tus operaciones matemáticas</p>
+
+        <table>
+          <thead>
             <tr>
-                <td><button onclick="escribir('7')">7</button></td>
-                <td><button onclick="escribir('8')">8</button></td>
-                <td><button onclick="escribir('9')">9</button></td>
-                <td><button onclick="escribir('/')">/</button></td>
+              <td colspan="4">
+                <input type="text" id="pantalla" value="0" readonly />
+              </td>
             </tr>
+          </thead>
+
+          <tbody>
             <tr>
-                <td><button onclick="escribir('4')">4</button></td>
-                <td><button onclick="escribir('5')">5</button></td>
-                <td><button onclick="escribir('6')">6</button></td>
-                <td><button onclick="escribir('*')">*</button></td>
+              <td><button onclick="escribir('7')">7</button></td>
+              <td><button onclick="escribir('8')">8</button></td>
+              <td><button onclick="escribir('9')">9</button></td>
+              <td>
+                <button class="operador" onclick="escribir('/')">/</button>
+              </td>
             </tr>
+
             <tr>
-                <td><button onclick="escribir('1')">1</button></td>
-                <td><button onclick="escribir('2')">2</button></td>
-                <td><button onclick="escribir('3')">3</button></td>
-                <td><button onclick="escribir('-')">-</button></td>
+              <td><button onclick="escribir('4')">4</button></td>
+              <td><button onclick="escribir('5')">5</button></td>
+              <td><button onclick="escribir('6')">6</button></td>
+              <td>
+                <button class="operador" onclick="escribir('*')">*</button>
+              </td>
             </tr>
+
             <tr>
-                <td><button onclick="escribir('0')">0</button></td>
-                <td><button onclick="escribir('.')">.</button></td>
-                <td><button onclick="escribir('=')">=</button></td>
-                <td><button onclick="escribir('+')">+</button></td>
+              <td><button onclick="escribir('1')">1</button></td>
+              <td><button onclick="escribir('2')">2</button></td>
+              <td><button onclick="escribir('3')">3</button></td>
+              <td>
+                <button class="operador" onclick="escribir('-')">-</button>
+              </td>
             </tr>
+
             <tr>
-                <td colspan="4"><button>Borrar</button></td>
+              <td><button onclick="escribir('0')">0</button></td>
+              <td><button onclick="escribir('.')">.</button></td>
+              <td><button class="igual" onclick="escribir('=')">=</button></td>
+              <td>
+                <button class="operador" onclick="escribir('+')">+</button>
+              </td>
             </tr>
-        </tbody>
-    </table>
-</body>
+
+            <tr>
+              <td colspan="4">
+                <button class="borrar" onclick="borrar()">Borrar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
 </html>

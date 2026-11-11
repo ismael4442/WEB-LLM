@@ -1,0 +1,149 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+}
+
+/* CABECERA */
+header {
+    background: linear-gradient(135deg, #0066ff, #00bfff);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: #0066ff;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.juego {
+    background: white;
+    width: 100%;
+    max-width: 650px;
+    padding: 35px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.juego h1 {
+    color: #0066cc;
+    margin-bottom: 12px;
+}
+
+.instrucciones {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* BOTONES */
+.opciones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.opciones button {
+    background: linear-gradient(135deg, #0066ff, #00aaff);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.opciones button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 102, 255, 0.3);
+}
+
+.opciones button:active {
+    transform: scale(0.95);
+}
+
+/* MARCADOR */
+.marcador {
+    background: #f2f7ff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #dce9ff;
+}
+
+.marcador h2 {
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+.marcador p {
+    padding: 7px;
+    font-size: 16px;
+    border-bottom: 1px solid #dce5f0;
+}
+
+.marcador p:last-child {
+    border-bottom: none;
+}
+
+/* RESULTADO */
+#resultado {
+    background: #f8faff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #dce9ff;
+}
+
+#resultado h2 {
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+#resultado p {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+#mensaje {
+    font-size: 21px !important;
+    font-weight: bold;
+    color: #0066cc;
+    margin-top: 20px !important;
+}

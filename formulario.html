@@ -1,64 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-    <link rel="stylesheet" href="CSS/index.css">
-</head>
+    <link rel="stylesheet" href="CSS/index.css" />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>Mi instituto</h1>
 
-		<header>
-			<h1>Mi instituto</h1>
-
-			<nav>
-				<a href="index.html" class="inicio-btn">⌂ Inicio</a>
-				<a href="HORARIO.html">Horario</a>
-				<a href="formulario.html">Formulario</a>
-				<a href="Ej1_formato_texto.html">Ej1_formato_texto.html</a>
-				<a href="Ej3_class_id_iframe.html">Ej3_class_id_iframe.html</a>
-
-			</nav>
-		</header>
+      <nav>
+        <a href="index.html" class="inicio-btn">⌂ Inicio</a>
+        <a href="HORARIO.html">Horario</a>
+        <a href="formulario.html">Formulario</a>
+        <a href="Ej1_formato_texto.html">Ej1_formato_texto.html</a>
+        <a href="Ej3_class_id_iframe.html">Ej3_class_id_iframe.html</a>
+        <a href="jsinicio.html">JS</a>
+      </nav>
+    </header>
 
     <main>
+      <section class="formulario">
+        <h1>Formulario de contacto</h1>
+        <p>Rellena el formulario para contactar con nosotros.</p>
 
-        <section class="formulario">
-            <h1>Formulario de contacto</h1>
-            <p>Rellena el formulario para contactar con nosotros.</p>
+        <form>
+          <label for="nombre">*Nombre:</label>
+          <input
+            type="text"
+            required
+            id="nombre"
+            name="nombre"
+            placeholder="Escribe tu nombre"
+          />
 
-            <form>
+          <label for="email">*Correo electrónico:</label>
+          <input
+            type="email"
+            required
+            id="email"
+            name="email"
+            placeholder="ejemplo@correo.com"
+          />
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+          <label for="asunto">*Asunto:</label>
+          <input
+            type="text"
+            required
+            id="asunto"
+            name="asunto"
+            placeholder="Motivo del contacto"
+          />
 
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+          <label for="mensaje">*Mensaje:</label>
+          <textarea
+            id="mensaje"
+            required
+            name="mensaje"
+            placeholder="Escribe tu mensaje"
+          ></textarea>
 
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto" placeholder="Motivo del contacto">
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
-
-                <input type="submit" value="Enviar">
-
-            </form>
-        </section>
-
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p>CIFP Virgen de Gracia</p>
-        <p>
-            Contacto:
-            <a href="mailto:ismaelgardelamo@gmail.com">
-                ismaelgardelamo@gmail.com
-            </a>
-        </p>
+      <p>CIFP Virgen de Gracia</p>
+      <p>
+        Contacto:
+        <a href="mailto:ismaelgardelamo@gmail.com">
+          ismaelgardelamo@gmail.com
+        </a>
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
